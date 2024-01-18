@@ -1,0 +1,10 @@
+cmake_minimum_required(VERSION 3.10)
+project(tinyrenderer)
+
+set(CMAKE_CXX_STANDARD 17)
+set(CMAKE_CXX_STANDARD_REQUIRED ON)
+
+set(SRC main.cpp geometry.cpp model.cpp rasterizer.cpp tgaimage.cpp triangle.cpp)
+message(STATUS ${SRC})
+
+add_executable(${PROJECT_NAME} ${SRC})
